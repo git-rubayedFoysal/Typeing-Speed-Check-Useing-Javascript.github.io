@@ -69,64 +69,6 @@ btn2.addEventListener("click", function () {
   window.location.reload(true);
 });
 
-/*
-const playgame=()=>{
-    let randomNumber= Math.floor(Math.random()*setofWords.length);
-    let randomSentence= setofWords[randomNumber];
-    msg.innerHTML=randomSentence;
-    let date= new Date;
-    startTime = date.getTime();
-}
-
-const endgame=()=>{
-    let date= new Date;
-    endTime= date.getTime();
-    let totalTime=((endTime-startTime)/1000);
-
-    let totalType= textArea.value;
-    let countType= wordCount(totalType);
-    let totalSpeed= Math.round(((countType/totalTime)*60));
-    let speed= `You typed total at ${totalSpeed} words per minutes.`;
-    speed += compeareWord(msg.innerHTML,totalType);
-    msg.innerHTML=speed;
-}
-
-const compeareWord=(element1,element2)=>{
-    let word1= element1.split(" ");
-    let word2= element2.split(" ");
-    let count= 0;
-
-    word1.forEach(function(item,index){
-        if(item == word2[index]){
-            count++;
-        }
-    });
-
-    let errorNumber= (word1.length-count);
-    return `${count} correct out of ${word1.length} words and the total number of error are ${errorNumber}.`;
-}
-
-const wordCount=(element)=>{
-    let response= element.split(" ").length;
-    return response;
-}
-
-textArea.disabled=true;
-
-btn.addEventListener('click',function(){
-    if(this.innerText=="Start"){
-        textArea.disabled=false;
-        btn.innerHTML= 'Done';
-        playgame();
-    }else if(this.innerText=="Done"){
-        textArea.disabled=true;
-        btn.innerHTML='Start';
-        endgame();
-    }
-});
-
-btn2.addEventListener('click',function () {window.location.reload(true)})
-*/
 
 /*
 
